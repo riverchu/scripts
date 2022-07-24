@@ -7,8 +7,6 @@
 # Dependencies: alsa-utils
 
 dwm_alsa () {
-    printf "🔇"
-    return 0
 
     VOL=$(amixer get Master | tail -n1 | sed -r "s/.*\[(.*)%\].*/\1/")
     printf "%s" "$SEP1"
